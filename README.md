@@ -14,37 +14,37 @@ Instrukcija:
 
 ``` docker-compose up -d ```
 
+* Įsikeliame į 'mysql' conteiner'į duomenų bazę:
+
+``` docker cp ./marks.sql mysql:/var/tmp/marks.sql -d ```
+
+* Atsidarome mysql conteiner'į:
+
+``` docker-compose exec -it mysql bash ```
+
+* Prisijungiame prie mysql:
+
+``` mysql -u root -proot ```
+
+* Įsirašome duomenų bazę:
+
+``` source /var/tmp/marks.sql; ```
+
+* Atsijungiame nuo mysql ir išeiname iš mysql conteiner'io:
+
+``` exit``` x2 kartus
+
 * Atsidarome php konteinerį:
 
-``` docker-compose exec php-fpm bash```
+``` docker-compose exec -it d-php bash```
 
 * Update'inam projektą: (per php konteinerio bash komandų eilutę)
 
-``` composer update```
-
-* Įsirašome duomenų bazės migracijas: (per php konteinerio bash komandų eilutę)
-
-``` bin/console d:m:m ```
-
-* Užkrauname fixtūras: (per php konteinerio bash komandų eilutę)
-
-``` bin/console doctrine:fixtures:load```
+``` composer update````
 
 * Projektas paleistas ir jį galima pasiekti adresu:
 
 ```http://127.0.0.1:8000/```
-
-#### Testai:
-
-Instrukcija:
-
-* Atsidarome php konteinerį:
-
-``` docker-compose exec php-fpm bash```
-
-* Testų paleidimas: (per php konteinerio bash komandų eilutę)
-
-``` ./vendor/bin/simple-phpunit```
 
 #### Projekto paleidimas/išjungimas:
 
@@ -55,12 +55,3 @@ Instrukcija:
 * Projektas išjungiamas su komanda:
 
 ``` composer-docker down  ```
-
-#### Prisijungimai:
-
-Login Auth prisijungimai:
-
-Email: test0@test.lt Pass: test0 <br />
-Email: test1@test.lt Pass: test1 <br />
-Email: test2@test.lt Pass: test2 <br />
-Email: test3@test.lt Pass: test3 <br />
