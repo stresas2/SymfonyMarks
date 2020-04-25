@@ -1,9 +1,9 @@
-Phones book
+Symfony Marks
 ==================================
 
 #### Intro:
 
-Projektas sukurtas naudojantis "Ubuntu 18.04.3", jam paleisti reikalingas sukonfiguruotas docker'is. <br />
+Projektas sukurtas naudojantis "Ubuntu 19.04", jam paleisti reikalingas sukonfiguruotas docker'is. <br />
 Docker'io parsisiuntimo nuoroda [čia](https://docs.docker.com/install/linux/docker-ce/ubuntu/).<br /> Įdiegus reikia pasidaryti, kad docker'į būtų galima naudoti be root teisių, nuoroda [čia](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user). 
  
 #### Paleidimas:
@@ -40,7 +40,7 @@ Instrukcija:
 
 * Update'inam projektą: (per php konteinerio bash komandų eilutę)
 
-``` composer update````
+``` composer update ```
 
 * Projektas paleistas ir jį galima pasiekti adresu:
 
