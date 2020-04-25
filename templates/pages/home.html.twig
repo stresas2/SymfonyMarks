@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="mx-2 rounded bg-light p-2 shadow" id="content">
+        <h1 class="my-2 text-center">Studentai</h1>
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" id="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div ng-app="myApp" ng-controller="Ctrl">
+            <table class="table p-2 d-none" id="table">
+                <thead>
+                <tr>
+                    <th scope="col">Universiteto pavadinimas</th>
+                    <th scope="col">Vardas Pavardė</th>
+                    <th class="text-center" scope="col">Diskrečioji matematika</th>
+                    <th class="text-center" scope="col">Objektinis programavimas</th>
+                    <th class="text-center" scope="col">Filosofija</th>
+                    <th class="text-center" scope="col">Anglų k.</th>
+                    <th class="text-center" scope="col">Projektų valdymas</th>
+                </tr>
+                </thead>
+                <tr ng-repeat="data in grades">
+                    <td>{[{ data.student_info.name }]}</td>
+                    <td>{[{ data.student_info.last_name }]} {[{ data.student_info.last_name }]}</td>
+                    <td class="text-center">{[{data.grades.discrete_mathematics.avg_grade }]}</td>
+                    <td class="text-center">{[{ data.grades.object_oriented_programming.avg_grade}]}</td>
+                    <td class="text-center">{[{ data.grades.philosophy.avg_grade }]}</td>
+                    <td class="text-center">{[{ data.grades.english.avg_grade }]}</td>
+                    <td class="text-center">{[{ data.grades.project_management.avg_grade }]}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+{% endblock %}
