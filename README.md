@@ -16,7 +16,7 @@ Instrukcija:
 
 * Įsikeliame į 'mysql' conteiner'į duomenų bazę:
 
-``` docker cp ./marks.sql mysql:/var/tmp/marks.sql -d ```
+``` docker cp ./marks.sql mysql:/var/tmp/marks.sql ```
 
 * Atsidarome mysql conteiner'į:
 
