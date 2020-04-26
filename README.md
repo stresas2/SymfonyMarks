@@ -54,4 +54,4 @@ Instrukcija:
 
 * Projektas išjungiamas su komanda:
 
-``` composer-docker down  ```
+``` docker-compose down  ```
