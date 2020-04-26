@@ -20,7 +20,7 @@ Instrukcija:
 
 * Atsidarome mysql conteiner'į:
 
-``` docker-compose exec -it mysql bash ```
+``` docker exec -it mysql bash ```
 
 * Prisijungiame prie mysql:
 
