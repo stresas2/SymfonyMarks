@@ -36,7 +36,7 @@ Instrukcija:
 
 * Atsidarome php konteinerį:
 
-``` docker-compose exec -it d-php bash```
+``` docker exec -it d-php bash```
 
 * Update'inam projektą: (per php konteinerio bash komandų eilutę)
 
