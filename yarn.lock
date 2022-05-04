@@ -1009,10 +1009,10 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-angularjs@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/angularjs/-/angularjs-0.0.1.tgz#496f50c7141515e741ea976de891def0838b3f19"
-  integrity sha1-SW9QxxQVFedB6pdt6JHe8IOLPxk=
+angular@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.3.tgz#851ad75d5163c105a7e329555ef70c90aa706894"
+  integrity sha512-5qjkWIQQVsHj4Sb5TcEs4WZWpFeVFHXwxEBHUhrny41D8UrBAd6T/6nPPAsLngJCReIOqi95W3mxdveveutpZw==
 
 ansi-colors@^3.0.0:
   version "3.2.4"
